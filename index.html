@@ -1,364 +1,541 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"> 
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mr. Vishal</title>
-    <link rel="icon" href="https://i.ibb.co/zRsTj3p/Frame-1-37.png">
+    <meta name="keywords" content="Vishal Golhar, portfolio, Vishal full stack dev, personal portfolio lifecodes, portfolio design, portfolio website, personal portfolio" />
+    <meta name="description" content="Welcome to Vishal Portfolio. Full-Stack Web Developer and Android App Developer" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Favicon -->
+    <link id='favicon' rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-png">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" class="stylesheet">
-</head> 
+    <title>Portfolio | Vishal Golhar</title>
+</head>
+<body oncontextmenu="return false">
 
-<body>
+<!-- pre loader -->
+<!-- <div class="loader-container">
+  <img draggable="false" src="./assets/images/preloader.gif" alt="">
+</div> -->
 
-    <!-------------------------- Header Area -------------------------->
-    <header class="header-area">
-        <div class="container">
-            <div class="header">
-               
-                <a href="" class="logo">
-                    <img src="files/sign3.png" alt="" class="signature">
-                    <i class="fa-solid fa-code"></i>
-                </a>
-                   
-                <ul class="navbar">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#certificates">Certificate</a></li> <!-- Added -->
-                    <li><a href="#skills">Skill</a></li> <!-- Added -->
-                </ul>
-                
-                
-                <div class="menu_icon">
-                    <i class="fa fa-bars"></i>
-                </div>
+<!-- navbar starts -->
+<header>
+  <a href="/" class="logo">Vishal Golhar</a>
 
-            </div>
-        </div> 
-    </header>
- 
-    <!-------------------------- Home Page -------------------------->
-    <div class="FirstElement" id="home">
-        <div class="profile-photo">
-            <img src="files/p7.png" alt="profile picture">
-        </div>
-        <div class="profile-text">
-            <h5>Hi I'm </h5><br>
-            <h1>Vishal</h1><br>
-            <p>Welcome to my portfolio website! I'm a passionate and aspiring software engineer with a strong desire to create innovative solutions and push the boundaries of technology.With a deep love for coding and problem-solving, I am constantly seeking opportunities to learn and grow in this ever-evolving field.</p>
-            
-            <div class="btn-group">
-                <a href="files/mycv.pdf" class="btn   active">Download CV</a>
-                <a href="mailto:vishalgolhar10@gmail.com" class="btn">Contact</a>
-            </div>
 
-            <div class="social">
-                <a href="mailto:vishalgolhar10@gmail.com"><i class="fa fa-envelope"></i></a>
-                <a href="https://www.linkedin.com/in/vishalgolhar/"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/mrvishalg2004"><i class="fa-brands fa-github"></i></a>
-                <!-- <a href="https://leetcode.com/"><i class="fa fa-code"></i></a> -->
-                <a href="https://www.instagram.com/vishalgolhar.in/" target="_blank"><i class="fab fa-instagram"></i></a>
-            </div>
-        </div>
+        <div id="menu" class="fas fa-bars"></div>
+        <nav class="navbar">
+            <ul>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+            <!-- <li><a href="#contact">Contact</a></li> -->
+            </ul>
+        </nav>
+</header>
+<!-- navbar ends -->
+
+
+<!-- hero section starts -->
+<section class="home" id="home">
+    <div id="particles-js"></div>
+
+    <div class="content">
+    <h2>Hi There,<br/> I'm Vishal <span>Golhar</span></h2>
+    <p>i am into <span class="typing-text"></span></p>
+    <a href="#about" class="btn"><span>About Me</span>
+      <i class="fas fa-arrow-circle-down"></i>
+    </a>
+    <div class="socials">
+        <ul class="social-icons">
+          <li><a class="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/vishalgolhar/" target="_blank"><i class="fab fa-linkedin"></i></a></li> 
+          <li><a class="github" aria-label="GitHub" href="https://github.com/mrvishalg2004" target="_blank"><i class="fab fa-github"></i></a></li>
+          <!-- <li><a class="twitter" aria-label="Twitter" href="https://twitter.com/jigar_sable" target="_blank"><i class="fab fa-twitter"></i></a></li> -->
+          <!-- <li><a class="telegram" aria-label="Telegram" href="https://t.me/lifecode5" target="_blank"><i class="fab fa-telegram-plane"></i></a></li> -->
+          <li><a class="instagram" aria-label="Instagram" href="https://www.instagram.com/vishalgolhar.in/"><i class="fab fa-instagram" target="_blank"></i></a></li>
+          <!-- <li><a class="dev" aria-label="Dev" href="https://dev.to/jigarsable" target="_blank"><i class="fab fa-dev"></i></a></li> -->
+        </ul>
+      </div>
     </div>
-
-        <!-------------------------- About Section -------------------------->
-    <section class="about-area" id="about">
-        <div class="container">
-            <div class="about">
-                
-                <div class="about-content">
-                    <h4>About Me</h4>
-                    <ul>
-                      <li>I am currently pursuing my Second year B. Tech Degree in Artificial Intelligence. 
-                        I've established a strong base in software development, especially in Java, Python, SQL, Git, and GitHub.</li>
-                      <li> 
-                        My skills in these domains empower me to tackle projects with assurance and produce top-notch outcomes. I firmly believe in the importance of ongoing learning and staying flexible in the constantly changing landscape of software engineering.</li>
-                      <li> I'm always on the lookout for chances to broaden my knowledge and skills, welcoming new technologies and approaches. Feel free to explore my work, and don't hesitate to reach out if you have any questions or opportunities for collaboration. </li>
-                    </ul>
-                </div>
-                                  
-                <div class="about-skills">
-                    <ul>
-                        <li>Name: Mr Vishal Golhar</li>
-                        <li>Age: 20</li>     
-                        <li>From: India</li>
-                        <li>Email: vishalgolhar10@gmail.com</li>
-                        <li>Availabiltiy: Fulltime</li>
-                        <li>Experience: &lt;1yr</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-        <!-------------- Education & Internship -------------->
-    <section class="education-content" id="education">
-        <div class="container">
-            <div class="row">
-                <div class="education ">
-                    <h3 class="title">Education</h3>
-                    <div class="row">
-                        <div class="timeline-box">
-                            <div class="timeline">
-
-                                <!-- Timeline-item -->
-                                <div class="timeline-item">
-                                    <div class="circle-dot"></div>
-                                    <h3 class="timeline-title">
-                                        B.Tech in AI ( Pursuing )
-                                    </h3>
-                                    <h4 class="timeline-title">G. H. Raisoni College of Engineering</h4>
-                                    <h4 class="timeline-title">
-                                        <i class="fa fa-calendar"></i> 2023-2026
-                                    </h4>
-                                </div> 
-
-                                
-                                <!-- Timeline-item -->
-                                <div class="timeline-item">
-                                    <div class="circle-dot"></div>
-                                    <h3 class="timeline-title">Diploma Engineering </h3>
-                                    <h4 class="timeline-title">Government Polytechnic, Bramhapuri</h4>
-                                    <h4 class="timeline-title">
-                                        <i class="fa fa-calendar"></i> 2020-2023
-                                    </h4>
-                                </div>
-                                <!-- Timeline-item -->
-                                <div class="timeline-item">
-                                    <div class="circle-dot"></div>
-                                    <h3 class="timeline-title">
-                                        Secondary Education
-                                    </h3>
-                                    <h4 class="timeline-title">Bharat Vidyalaya</h4>
-                                    <h4 class="timeline-title">
-                                        <i class="fa fa-calendar"></i> 2017-2020
-                                    </h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="internship">
-                    <h3 class="title">Internship</h3>
-                    <div class="row">
-                        <div class="timeline-box">
-                            <div class="timeline">
-                                
-                                <!-- Timeline-item -->
-                                <div class="timeline-item">
-                                    <div class="circle-dot"></div>
-                                    <h3 class="timeline-title">
-                                        Artificial Intelligence
-                                    </h3>
-                                    <h4 class="timeline-title">Vodafone Intelligent Solutions</h4>
-                                    <h4 class="timeline-title">
-                                        <i class="fa fa-calendar"></i> Oct 2023 - Nov 2023 
-                                    </h4>
-                                    <li class="timeline-text">
-                                    Participated in a prestigious internship sponsored by Connecting Dreams Foundation in collaboration with _VOIS for Tech Program on Artificial Intelligence by VOIS and Vodafone Idea Foundation. Strengthened technical skills through the _VOIS for Tech e-Learning Platform, focusing on real-world AI challenges. Completed an independent project under mentorship, acquiring certifications from AICTE and CDF. Engaged in collaborative learning, masterclasses by Subject Matter Experts, and gained practical insights into applying AI principles.
-                                    </li>
-                                </div> 
-                                <!-- Timeline-item -->
-                                <div class="timeline-item">
-                                    <div class="circle-dot"></div>
-                                    <h3 class="timeline-title">Python Developer</h3>
-                                    <h4 class="timeline-title">iBase Electrosoft LLP</h4>
-                                    <h4 class="timeline-title">
-                                        <i class="fa fa-calendar"></i> Jul 2022 - Aug 2022
-                                    </h4>
-                                    <li class="timeline-text">During my internship at iBase Electrosoft LLP in Nagpur, I honed my Python and machine learning skills through hands-on projects. Working with a skilled team, I contributed to innovative projects, gaining valuable insights into Python's role in machine learning and the cutting-edge work at iBase Electrosoft LLP.</li>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-        <!-------------------------- Projects -------------------------->
-    <section class="project-content" id="projects">
-        <div class="container">
-            <div class="project-title">
-                <h4>My Projects</h4>
-                <p>Discover my projects, where creativity meets innovation</p>
-            </div>
-            <div class="projects">
-                <!-- 1st Project -->
-                <div class="project">
-                    <i class="fa-brands fa-java"></i>
-                    <h4>SnakeGame Using Java</h4>
-                    <p>This is a simple implementation of the classic Snake game using Java and Swing.</p>
-                </div>
-                 <!-- 2nd Project -->
-                 <div class="project">
-                    <i class="fa-solid fa-notes-medical"></i>
-                    <h4>Disease Prediction using Django and Machine Learning</h4>
-                    <p>This project utilizes machine learning within a Django-based web app to predict diseases based on user-inputted medical information. The app serves as a preliminary diagnostic tool, aiding users in making informed decisions about seeking medical advice.</p>
-                </div>
-                <!-- 3rd Project -->
-                <div class="project">
-                    <i class="fa fa-desktop"></i>
-                    <h4>Portfolio Website</h4>
-                    <p>Created a portfolio website using HTML, CSS, and JavaScript, It serves as a platform to introduce myself, share my projects, and provide information about my  education and internship.</p>
-                </div>
-                
-            </div>
-        </div>
-    </section>
-
-    <!-- Demo Start -->
-
-    <!-- Certificates and Achievements Section -->
-<section class="certificates-content" id="certificates">
-    <div class="container">
-        <div class="certificates-title">
-            <h4>Certificates and Achievements</h4>
-            <p>Explore my certificates and achievements</p>
-        </div>
-        <div class="certificates">
-            <!-- Certificate 1 -->
-            <div class="certificate">
-                <i class="fa fa-certificate"></i>
-                <h4>AI Design Challenges</h4>
-                <p>Earned the "AI Design Challenges" certificate, mastering the art of solving creative problems in the world of Artificial Intelligence!</p>
-            </div>
-            <!-- Certificate 2 -->
-            <div class="certificate">
-                <i class="fa fa-certificate"></i>  
-                <h4>Machine Learning Models</h4>
-                <p>
-                    Learn "Machine Learning Models" certificate and discover the world of computer programs that use algorithms to recognize data patterns or make predictions! 🚀</p>
-            </div>
-            <!-- Certificate 3 -->
-            <div class="certificate">
-                <i class="fa fa-certificate"></i>  
-                <h4>Building Neural Networks with Keras</h4>
-                <p>
-                    Earned a "Building Neural Networks with Keras" certificate, showcasing proficiency in utilizing the straightforward capabilities of Keras for constructing neural networks.</p>
-            </div>
-        </div>
-    </div>
+<div class="image">
+    <img draggable="false" class="tilt" src="./assets/images/hero.png" alt="">
+</div>
 </section>
+<!-- hero section ends -->
 
 
-    <!-- Demo End -->
-
-    <!-- Demo 2 Start -->
-
-    <!-- Skills Section -->
-<section class="skills-content" id="skills">
-    <div class="container">
-        <div class="skills-title">
-            <h4>Skills</h4>
-            <p>Explore my technical skills</p>
-        </div>
-        <div class="skills">
-            <!-- Skill 1 -->
-            <div class="skill">
-                <i class="fa fa-code"></i>
-                <h4>Programming Languages</h4>
-                <p>Java, Python, JavaScript, 
-                    Android Development, 
-                    Visual Basic .NET (VB.NET)</p>
-            </div>
-            <!-- Skill 2 -->
-            <div class="skill">
-                <i class="fa fa-database"></i>
-                <h4>Database</h4>
-                <p>SQL, PostgreSQL</p>
-            </div>
-            <!-- Skill 3 -->
-            <div class="skill">
-                <i class="fa fa-code-branch"></i>
-                <h4>Version Control</h4>
-                <p>Git, GitHub</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Platforms Section -->
-<section class="platforms-content" id="platforms">
-    <div class="container">
-        <div class="platforms-title">
-            <h4>Platforms</h4>
-            <p>Explore the platforms I work with</p>
-        </div>
-        <div class="platforms">
-            <!-- Platform 1 -->
-            <div class="platform">
-                <i class="fa fa-laptop-code"></i>
-                <h4>IDEs</h4>
-                <p>Visual Studio Code, NetBeans, Android Studio</p>
-            </div>
-            <!-- Platform 2 -->
-            <div class="platform">
-                <i class="fa fa-cloud"></i>
-                <h4>Cloud Platforms</h4>
-                <p>Google Colab, Firebase, Netlify</p>
-            </div>
-            <!-- Platform 3 -->
-            <div class="platform">
-                <i class="fa-solid fa-desktop"></i>
-                <h4>Operating System</h4>
-                <p>Window, Linux, Macos</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-    <!-- Demo 2 End -->
-
-
-<!-- 
-        ------------------------ Contact Me ------------------------ -->
-
-    <!-- <section class="contact-content" id="contact">
-        <div class="container">
-            <div class="contact-title">
-                <h4>Contact Me</h4>
-                <p>Get In Touch</p>
-            </div>
-            <div class="contact">
-                <form name="submitToGoogleSheet">
-                    <input type="text" name="NAME" placeholder="Name" required>
-                    <input type="email" name="EMAIL" placeholder="Email" required>
-                    <input type="text" name="SUBJECT" placeholder="Subject">
-                    <textarea name="MESSAGE" placeholder="Message"></textarea>
-                    <input type="submit" value="Send Message" class="submit">
-                </form>
-                <span id="msg"></span>
-            </div>
-        </div>
-    </section>
-         -->
-  
-
-    <!-------------------------- JS -------------------------->
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
-
+<!-- about section starts -->
+<section class="about" id="about">
+    <h2 class="heading"><i class="fas fa-user-alt"></i> About <span>Me</span></h2>
     
-    <!-------------------------- Footer section -------------------------->
-   <footer class="footer">
-    <small class="message">
-        Thank you for dropping by, and I wish you an enjoyable coding experience!</small>
-    <small class="copyright">&copy; Copyright 2024. All rights reserved.</small>
-   </footer>
+    <div class="row">
+
+    <div class="image">
+        <img draggable="false" class="tilt" src="./assets/images/me.jpeg" alt="">
+    </div>
+    <div class="content">
+        <h3>I'm Vishal</h3>
+        <span class="tag">Web Developer | App Developer | Backend Developer</span>
+        
+        <p>I am currently pursuing my Second year B. Tech Degree in Artificial Intelligence. I've established a strong base in software development, especially in Java, Python, SQL, Git, and GitHub.
+          My skills in these domains empower me to tackle projects with assurance and produce top-notch outcomes. I firmly believe in the importance of ongoing learning and staying flexible in the constantly changing landscape of software engineering.
+          I'm always on the lookout for chances to broaden my knowledge and skills, welcoming new technologies and approaches. Feel free to explore my work, and don't hesitate to reach out if you have any questions or opportunities for collaboration.</p>
+        
+        <div class="box-container">
+            <!-- <div class="box">
+              <p><span> age: </span> 20</p>
+              <p><span> phone : </span> +91 XXX-XXX-XXXX</p>
+            </div> -->
+            <div class="box">
+              <p><span> email : </span>vishalgolhar10@gmail.com</p>
+              <p><span> place : </span> Nagpur, India - 440016</p>
+            </div>
+        </div>
+        
+        <div class="resumebtn">
+            <a href="https://drive.google.com/file/d/1d5g7HNT4udn2zYkV836eRs832wSf5lHu/view?usp=sharing" target="_blank" class="btn"><span>Resume</span>
+                <i class="fas fa-chevron-right"></i>
+            </a>
+        </div>
+
+    </div>
+    </div>
+</section>
+<!-- about section ends -->
+
+<!-- skills section starts -->
+<section class="skills" id="skills">
+
+    <h2 class="heading"><i class="fas fa-laptop-code"></i> Skills & <span>Abilities</span></h2>
+
+    <div class="container">
+          <div class="row" id="skillsContainer">
+
+            <!-- <div class="bar">
+              <div class="info">
+                <img src="https://img.icons8.com/color/48/000000/adobe-xd.png"/>
+                <span>AdobeXD</span>
+              </div>
+            </div> -->
+
+      </div>
+</div>
+</section>
+<!-- skills section ends -->
+
+
+<!-- education section starts -->
+<section class="education" id="education">
+
+  <h1 class="heading"><i class="fas fa-graduation-cap"></i> My <span>Education</span></h1>
+
+    <p class="qoute">Education is not the learning of facts, but the training of the mind to think.</p>
+
+    <div class="box-container">
+
+    <div class="box">
+        <div class="image">
+        <img draggable="false" src="./assets/images/educat/college.jpg" alt="">
+        </div>
+        <div class="content">
+        <h3>Bachelor of Technology in Artificial Intelligence</h3>
+        <p>G H Raisoni College of Engineering | Nagpur</p>
+        <h4>2023-2026 | Pursuing</h4>
+        </div>
+    </div>
+
+    <div class="box">
+      <div class="image">
+      <img draggable="false" src="./assets/images/educat/school.jpg" alt="">
+      </div>
+      <div class="content">
+      <h3>Diploma In Computer Technology </h3>
+      <p>Government Polytechnic, | Bramhapuri</p>
+      <h4>2020-2023| Completed</h4>
+      </div>
+    </div>
+
+</div>
+</section>
+<!-- education section ends -->
+
+
+<!-- work project section starts -->
+<section class="work" id="work">
+
+  <h2 class="heading"><i class="fas fa-laptop-code"></i> Projects <span>Made</span></h2>
+
+  <div class="box-container">
+
+    <!-- <div class="box tilt">
+      <img draggable="false" src="./assets/images/projects/portfolio1.PNG" alt="" />
+      <div class="content">
+        <div class="tag">
+        <h3>Portfolio Website</h3>
+        </div>
+        <div class="desc">
+          <p>Personal portfolio website. Don't need much info about it, just scroll down. You're here only!</p>
+          <div class="btns">
+            <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
+            <a href="https://github.com/jigar-sable/Portfolio-Website" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+</div>
+
+<div class="viewall">
+  <a href="/projects" class="btn"><span>View All</span>
+    <i class="fas fa-arrow-right"></i>
+</a>
+</div>
+
+</section>
+<!-- work project section ends -->
+
+<!-- experience section starts -->
+<section class="experience" id="experience">
+
+  <h2 class="heading"><i class="fas fa-briefcase"></i> Experience </h2>
+
+  <div class="timeline">
+
+    <div class="timeline">
+      <div class="container left">
+        <div class="content">
+          <div class="tag">
+            <h2>Emerging Technologies Intern</h2>
+          </div>
+          <div class="desc">
+              <h3> AICTE | virtual Internship</h3>
+              <p>Dec 2023 - Jan 2024</p>
+              <br>
+              <h2> <p> - Successfully completed a Hotel Booking Analysis project using ML. </p>
+                <p>- Gained hands-on experience with SkillsBuild & IBM Cloud Platform. </p>
+                <p>- Learned from industry experts in the field of Emerging Technologies.</p>
+                <p>- Collaborated with a team of mentors and colleagues.</p>
+ </h2>
+              
+          </div>
+        </div>
+      </div>
+  
+      <div class="container right">
+        <div class="content">
+          <div class="tag">
+            <h2>AI Intern</h2>
+          </div>
+          <div class="desc">
+              <h3>_VOIS | virtual Internship</h3>
+              <p>Oct 2023 - Nov 2023</p>
+              <br>
+              <h2> <p> The internship will focus on Artificial Intelligence (AI). You will learn and demonstrate skills that will enhance your employability and your confidence in the subject area. You will also work on a project that will help you develop your problem-solving skills and your ability to work independently. </p>
+                
+ </h2>
+          </div>
+        </div>
+      </div>
+  
+      <div class="container left">
+          <div class="content">
+            <div class="tag">
+              <h2>Python Developer</h2>
+            </div>
+            <div class="desc">
+                <h3>iBase Electrosoft LLP</h3>
+                <p>Jul 2022 - Aug 2022</p>
+                <br>
+                <h2><P>
+                  During my internship at iBase Electrosoft LLP in Nagpur, I gained in-depth experience in Python and machine learning. I worked on hands-on projects that enhanced my programming skills and allowed me to tackle real-world challenges alongside a talented team. This opportunity not only deepened my understanding of Python's application in machine learning but also showcased the innovative work at iBase Electrosoft LLP, making it a truly rewarding experience.</P></h2>
+            </div>
+          </div>
+        </div>
+  
+    </div>
+  
+  <div class="morebtn">
+    <a href="/experience" class="btn"><span>View All</span>
+      <i class="fas fa-arrow-right"></i>
+  </a>
+  </div>
+
+</div>
+
+</section>
+<!-- experience section ends -->
+ 
+ <!--Certificate section start-->
+ <!-- experience section ends -->
+
+<!-- certificates and achievements section starts -->
+
+<section id="certificates" class="certificates">
+  <h2><i class="fas fa-award"></i> Certificates and Achievements</h2>
+  
+  <div class="slideshow-container">
+      <div class="mySlides fade">
+          <img src="assets/images/isro.png" alt="IIRS Logo" class="certificate-logo">
+          <h3>Remote Sensing and Digital Image Analysis </h3>
+          <p>Indian Institute of Remote Sensing (IIRS), ISRO</p>
+          <p><strong>Issued:</strong> Sep 2024 | <strong>Credential ID:</strong> 2024234293485</p>
+          <p><strong>Skills:</strong> Remote Sensing, Digital Image Processing, Space Science, Geospatial Data</p>
+          <p>This certification highlights my expertise in satellite data interpretation, image classification, and geospatial applications.</p>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="/assets/images/wlt copy.png" alt="AWS Logo" class="certificate-logo">
+        <h3>Advanced Software Engineering Job Simulation</h3>
+        <p>Walmart Global Tech</p>
+        <p><strong>Issued:</strong> Jun 2024| <strong>Expires:</strong> Jan 2033</p>
+        <p><strong>Skills:</strong> Data Munging · Data Structures · Java · Python (Programming Language) · Optimization · Relational Databases · Software Architecture · MySQL · Unified Modeling Language (UML)</p>
+        <p>The Walmart Global Tech Advanced Software Engineering Job Simulation Certificate, issued to Vishal Golhar by Forage on June 12, 2024, certifies his hands-on experience in advanced data structures, software architecture, relational database design, and data munging—demonstrating his readiness for practical software engineering challenges.</p>
+    </div>
+
+      <div class="mySlides fade">
+          <img src="/assets/images/amazon-aws.svg" alt="AWS Logo" class="certificate-logo">
+          <h3>AWS Certified SysOps Administrator - Associate (SOA-C02) </h3>
+          <p>Amazon Web Services (AWS)</p>
+          <p><strong>Issued:</strong> Jul 2024 | <strong>Expires:</strong> Jan 2034</p>
+          <p><strong>Skills:</strong> AWS Management and Operations, Monitoring and Reporting, High Availability, IAM</p>
+          <p>This certification validates my expertise in deploying, managing, and operating scalable, highly available systems on AWS.</p>
+      </div>
+
+      <div class="mySlides fade">
+          <img src="/assets/images/amazon-aws.svg" alt="AWS Cloud Practitioner Logo" class="certificate-logo">
+          <h3>AWS Cloud Practitioner Essentials </h3>
+          <p>Amazon Web Services (AWS)</p>
+          <p><strong>Issued:</strong> Jul 2024 | <strong>Expires:</strong> Jul 2034</p>
+          <p><strong>Skills:</strong> AWS Cloud Fundamentals, Core AWS Services, Security</p>
+          <p>This certification provides a comprehensive understanding of AWS Cloud concepts.</p>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="/assets/images/amazon-aws.svg" alt="AWS Logo" class="certificate-logo">
+        <h3>AWS Technical Essentials</h3>
+        <p>Amazon Web Services (AWS)</p>
+        <p><strong>Issued:</strong> Jul 2024| <strong>Expires:</strong> Jan 2034</p>
+        <p><strong>Skills:</strong> AWS Cloud Foundational Knowledge · AWS Service Identification · AWS Security Awareness · AWS Management Console Navigation · AWS Cost Management Understanding</p>
+        <p>The AWS Technical Essentials course is an introductory course that covers the basics of Amazon Web Services (AWS). It is designed for people who are new to the cloud or who want to learn more about AWS. The course covers topics such as the AWS Cloud platform, core AWS services, security, and cost management.</p>
+    </div>
+
+    <div class="mySlides fade">
+      <img src="/assets/images/ibm.png" alt="AWS Logo" class="certificate-logo">
+      <h3>Threat Intelligence and Hunting Certificate</h3>
+      <p>IBM</p>
+      <p><strong>Issued:</strong> Jun 2024| <strong>Expires:</strong> Dec 2030</p>
+      <!-- <p><strong>Skills:</strong> AWS Cloud Foundational Knowledge · AWS Service Identification · AWS Security Awareness · AWS Management Console Navigation · AWS Cost Management Understanding</p> -->
+      <p>This certificate demonstrates that Vishal Golhar has a strong foundation in the fundamentals of threat intelligence and hunting. These skills are in high demand in today's job market, as organizations are increasingly looking for ways to protect themselves from cyberattacks.</p>
+  </div>
+
+  <div class="mySlides fade">
+    <img src="/assets/images/vod.png" alt="AWS Logo" class="certificate-logo">
+    <h3>Building Neural Networks with Keras</h3>
+    <p>Vodafone</p>
+    <p><strong>Issued:</strong> Nov 2023 | <strong>Expires:</strong> Dec 2030</p>
+    <p><strong>Skills:</strong> TensorFlow Integration · Model Architecture · Problem Solving · Data Preprocessing · Hyperparameter Tuning · Keras Basics</p> 
+    <!-- <p>This certificate demonstrates that Vishal Golhar has a strong foundation in the fundamentals of threat intelligence and hunting. These skills are in high demand in today's job market, as organizations are increasingly looking for ways to protect themselves from cyberattacks.</p> -->
+</div>
+
+
+
+
+
+      <!-- Add more certificates following the same structure -->
+
+      <!-- Navigation buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+    <span class="dot" onclick="currentSlide(4)"></span> 
+    <span class="dot" onclick="currentSlide(5)"></span> 
+    <span class="dot" onclick="currentSlide(6)"></span> 
+    <span class="dot" onclick="currentSlide(7)"></span> 
+</div>
+
+</section>
+
+<!-- JavaScript for the slideshow -->
+<script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+      showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+      showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+      let i;
+      const slides = document.getElementsByClassName("mySlides");
+      const dots = document.getElementsByClassName("dot");
+      
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      
+      slides[slideIndex - 1].style.display = "block";  
+      dots[slideIndex - 1].className += " active";
+  }
+
+  // Optional: Auto slide functionality
+  setInterval(() => {
+      plusSlides(1);
+  }, 3000); // Change slide every 3 seconds
+</script>
+
+
+<!-- certificates and achievements section ends -->
+
+<!-- contact section starts -->
+<!-- <section class="contact" id="contact"> -->
+  <!-- Your existing contact section code -->
+<!-- </section> -->
+<!-- contact section ends -->
+
+<!--Certificate section end-->
+
+<!-- contact section starts -->
+<!-- <section class="contact" id="contact">
+  
+  <h2 class="heading"><i class="fas fa-headset"></i> Get in <span>Touch</span></h2>
+
+  <div class="container">
+    <div class="content">
+      <div class="image-box">
+        <img draggable="false" src="./assets/images/contact1.png" alt="">
+      </div>
+    <form id="contact-form">
+      
+      <div class="form-group">
+        <div class="field">
+          <input type="text" name="name" placeholder="Name" required>
+          <i class='fas fa-user'></i>
+        </div>
+        <div class="field">
+          <input type="text" name="email" placeholder="Email" required>
+          <i class='fas fa-envelope'></i>
+        </div>
+        <div class="field">
+          <input type="text" name="phone" placeholder="Phone">
+          <i class='fas fa-phone-alt'></i>
+        </div>
+        <div class="message">
+        <textarea placeholder="Message" name="message" required></textarea>
+        <i class="fas fa-comment-dots"></i>
+        </div>
+        </div>
+      <div class="button-area">
+        <button type="submit">
+          Submit <i class="fa fa-paper-plane"></i></button>
+      </div>
+    </form>
+  </div>
+  </div>
+</section> -->
+<!-- contact section ends -->
+
+
+<!-- footer section starts -->
+<section class="footer">
+
+  <div class="box-container">
+
+      <div class="box">
+          <h3>Vishal Portfolio</h3>
+          <p>Thank you for visiting my personal portfolio website. I invite you to connect with me on social media. <br/> <br/> Keep Rising 🚀. Connect with me over live chat!</p>
+      </div>
+
+      <div class="box">
+          <h3>quick links</h3>
+          <a href="#home"><i class="fas fa-chevron-circle-right"></i> home</a>
+          <a href="#about"><i class="fas fa-chevron-circle-right"></i> about</a>
+          <a href="#skills"><i class="fas fa-chevron-circle-right"></i> skills</a>
+          <a href="#education"><i class="fas fa-chevron-circle-right"></i> education</a>
+          <a href="#work"><i class="fas fa-chevron-circle-right"></i> work</a>
+          <a href="#experience"><i class="fas fa-chevron-circle-right"></i> experience</a>
+          <a href="#certificates"><i class="fas fa-chevron-circle-right"></i> certificates</a>
+      </div>
+
+      <div class="box">
+          <h3>contact info</h3>
+          <p> <i class="fas fa-phone"></i>+91 XXX-XXX-XXXX</p>
+          <p> <i class="fas fa-envelope"></i>vishalgolhar10@gmail.com</p>
+          <p> <i class="fas fa-map-marked-alt"></i>Nagpur, India-440016</p>
+          <div class="share">
+
+            <li><a class="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/vishalgolhar/" target="_blank"><i class="fab fa-linkedin"></i></a></li> 
+            <li><a class="github" aria-label="GitHub" href="https://github.com/mrvishalg2004" target="_blank"><i class="fab fa-github"></i></a></li>
+            <!-- <li><a class="twitter" aria-label="Twitter" href="https://twitter.com/jigar_sable" target="_blank"><i class="fab fa-twitter"></i></a></li> -->
+            <!-- <li><a class="telegram" aria-label="Telegram" href="https://t.me/lifecode5" target="_blank"><i class="fab fa-telegram-plane"></i></a></li> -->
+            <li><a class="instagram" aria-label="Instagram" href="https://www.instagram.com/vishalgolhar.in/"><i class="fab fa-instagram" target="_blank"></i></a></li>
+
+          </div>
+      </div>
+  </div>
+
+  <h1 class="credit">Designed with <i class="fa fa-heart pulse"></i> by <a href="https://www.linkedin.com/in/vishalgolhar">Vishal Golhar</a></h1>
+
+</section>
+<!-- footer section ends -->
+
+
+<!-- scroll top btn -->
+<a href="#home" aria-label="ScrollTop" class="fas fa-angle-up" id="scroll-top"></a>
+<!-- scroll back to top -->
+
+
+<!-- ==== ALL MAJOR JAVASCRIPT CDNS STARTS ==== -->
+<!-- jquery cdn -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- typed.js cdn -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js" integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- particle.js links -->
+<script src="./assets/js/particles.min.js"></script>
+<script src="./assets/js/app.js"></script>
+
+<!-- vanilla tilt.js links -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js" integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- scroll reveal anim -->
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
+    ></script>
+
+<!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
+
+<script src="./assets/js/script.js"></script>
 
 </body>
 </html>

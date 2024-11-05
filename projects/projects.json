@@ -1,0 +1,47 @@
+[
+  {
+  
+    "name": "Disease Prediction System",
+    "desc": "About This project builds a web app that uses machine learning to predict diseases based on user input, potentially helping them decide if they need to see a doctor.",
+    "image": "dis",
+    "category": "",
+    "links": {
+      "view": "#",
+      "code": "https://github.com/mrvishalg2004/Disease-Prediction-using-Django-and-Machine-Learning"
+    }
+  },
+  {
+  
+    "name": "Organ Donation System | DonarPlus",
+    "desc": "The Organ Donation System is a decentralized web app connecting organ donors and recipients, ensuring secure and efficient donations.",
+    "image": "donor",
+    "category": "",
+    "links": {
+      "view": "#",
+      "code": "https://github.com/mrvishalg2004/Organ-Donation-System-DonarPlus"
+    }
+  },
+  {
+  
+    "name": "photographer portfolio",
+    "desc": "The site features a responsive design, image gallery, service details, and contact form, all built with HTML5, CSS3, and JavaScript for easy customization.",
+    "image": "photo",
+    "category": "",
+    "links": {
+      "view": "https://rgcreation.netlify.app/",
+      "code": "https://github.com/mrvishalg2004/photographer-portfolio-"
+    }
+  },
+  {
+  
+    "name": "GYMLandingPage",
+    "desc": "This is a simple web page designed using HTML, CSS, and JavaScript to create an attractive landing page for a gym or fitness center.",
+    "image": "gym",
+    "category": "",
+    "links": {
+      "view": "https://mrvishalg2004.github.io/GYMLandingPage/",
+      "code": "https://github.com/mrvishalg2004/GYMLandingPage"
+    }
+  }
+  
+]
