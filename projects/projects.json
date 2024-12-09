@@ -3,7 +3,7 @@
   
     "name": "InterviewPro",
     "desc": "**AI Interview Prep** Practice smarter with real-time feedback and confidence tools, powered by NLP APIs.",
-    "image": "interviewpro",
+    "image": "interviewpro.png",
     "category": "",
     "links": {
       "view": "https://liveinterviewpro.vercel.app/",
