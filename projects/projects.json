@@ -1,13 +1,13 @@
 [
   {
   
-    "name": "InterviewPro",
-    "desc": "**AI Interview Prep** Practice smarter with real-time feedback and confidence tools, powered by NLP APIs.",
-    "image": "interviewpro.png",
+    "name": "Disease Prediction System",
+    "desc": "About This project builds a web app that uses machine learning to predict diseases based on user input, potentially helping them decide if they need to see a doctor.",
+    "image": "dis",
     "category": "",
     "links": {
-      "view": "https://liveinterviewpro.vercel.app/",
-      "code": "https://github.com/mrvishalg2004/Interviewpro"
+      "view": "#",
+      "code": "https://github.com/mrvishalg2004/Disease-Prediction-using-Django-and-Machine-Learning"
     }
   },
   {
