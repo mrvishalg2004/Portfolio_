@@ -1,6 +1,17 @@
 [
   {
   
+    "name": "InterviewPro",
+    "desc": "AI-Powered Interview Prep Platform** Prepare smarter with AI-driven mock interviews! Get real-time transcription, feedback, and confidence-building tools. Built using Next.js, Tailwind CSS, Node.js, and NLP APIs, it's perfect for all skill levels.",
+    "image": "interviewpro",
+    "category": "",
+    "links": {
+      "view": "https://liveinterviewpro.vercel.app/",
+      "code": "https://github.com/mrvishalg2004/Interviewpro"
+    }
+  },
+  {
+  
     "name": "Disease Prediction System",
     "desc": "About This project builds a web app that uses machine learning to predict diseases based on user input, potentially helping them decide if they need to see a doctor.",
     "image": "dis",
