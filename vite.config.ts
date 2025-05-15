@@ -24,12 +24,7 @@ export default defineConfig(({ mode }) => ({
     sourcemap: false,
     outDir: "dist",
     emptyOutDir: true,
-    // Help diagnose build issues
-    minify: "terser",
-    terserOptions: {
-      compress: {
-        drop_console: false, // Keep console logs for debugging
-      },
-    },
+    // Using default esbuild minifier
+    minify: true
   },
 }));
