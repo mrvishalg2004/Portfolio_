@@ -1,0 +1,127 @@
+/* Optimized Visme form styling */
+
+/* Main container for the form */
+.visme-form-container {
+  position: relative;
+  overflow: hidden;
+  /* Set a fixed height to crop the blue header part of the Visme form */
+  height: 500px;
+  /* Add background to container to hide form until loaded */
+  background-color: transparent;
+}
+
+/* Form loading placeholder styling */
+.form-loading-placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+/* Target the Visme form div with optimized positioning */
+.visme_d {
+  position: relative;
+  /* Move the form up to hide the blue header */
+  margin-top: -150px;
+  /* Better performance with will-change */
+  will-change: opacity;
+  /* Prevent flash of unformatted content */
+  visibility: visible !important;
+}
+
+/* Make sure the iframe loads efficiently */
+.visme_d iframe {
+  background: transparent !important;
+  /* Improve rendering performance */
+  will-change: transform;
+  /* Prevent layout shifts */
+  min-height: 500px;
+}
+
+/* Optimize form element styling for better performance */
+.visme_d input, 
+.visme_d textarea, 
+.visme_d select {
+  font-family: inherit !important;
+  border-radius: 0.375rem !important;
+  /* Improve input rendering */
+  backface-visibility: hidden;
+}
+
+/* Hide the "Powered by Visme Forms" text - more aggressive targeting */
+.visme_d [data-testid="powered-by"],
+.visme_d .visme-powered-by,
+.visme_d iframe + div,
+.visme_d iframe + a,
+.visme_d iframe ~ div:last-child,
+div[style*="position: fixed"][style*="bottom"],
+a[href*="visme.co"],
+div[class*="powered"],
+div[class*="footer"],
+div:has(> a[href*="visme"]),
+p:contains("Powered by"),
+[style*="font-size: 12px"][style*="bottom: 0"],
+[style*="font-size: 11px"][style*="bottom: 0"],
+[style*="right: 0"][style*="bottom: 0"] {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  height: 0 !important;
+  overflow: hidden !important;
+  position: absolute !important;
+  pointer-events: none !important;
+  z-index: -9999 !important;
+}
+
+/* Also add overlay to prevent the text from showing */
+.visme-form-container::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 200px;
+  height: 40px;
+  background-color: white;
+  z-index: 9999;
+}
+
+/* Dark mode support for the overlay */
+.dark .visme-form-container::after {
+  background-color: #1f2937; /* Match your dark mode background */
+}
+
+/* Button styling with optimized gradients */
+.visme_d button {
+  border-radius: 0.375rem !important;
+  background-image: linear-gradient(to right, #3b82f6, #4f46e5) !important;
+  transition: all 0.3s ease !important;
+}
+
+/* Better dark mode support */
+@media (prefers-color-scheme: dark) {
+  .visme_d {
+    color-scheme: dark;
+  }
+  
+  .form-loading-placeholder .bg-gray-200 {
+    background-color: rgba(55, 65, 81, 0.3);
+  }
+}
+
+/* Adjust positioning for optimal display and prevent layout shifts */
+.visme_d > div {
+  margin-top: 0 !important;
+}
+
+/* Optimize animations for better performance */
+@media (prefers-reduced-motion: reduce) {
+  .visme_d {
+    transition: none !important;
+  }
+  
+  .form-loading-placeholder .animate-pulse {
+    animation: none !important;
+  }
+}

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <!-- Clean, modern gradient for the stylized VG -->
+    <linearGradient id="vg-gradient" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#60A5FA" /> <!-- Light blue -->
+      <stop offset="50%" stop-color="#3B82F6" /> <!-- Medium blue -->
+      <stop offset="100%" stop-color="#1E40AF" /> <!-- Dark blue -->
+    </linearGradient>
+  </defs>
+  
+  <!-- Perfectly centered and balanced VG icon -->
+  <g transform="translate(75, 60)">
+    <!-- V shape with elegant curves -->
+    <path d="M70,60 L176,350 L282,60" 
+          stroke="url(#vg-gradient)" 
+          stroke-width="32" 
+          stroke-linecap="round" 
+          stroke-linejoin="round" 
+          fill="none" />
+    
+    <!-- G shape (perfectly proportioned) -->
+    <path d="M325,140 A130,130 0 1 0 325,350 L325,250" 
+          stroke="url(#vg-gradient)" 
+          stroke-width="32" 
+          stroke-linecap="round" 
+          stroke-linejoin="round" 
+          fill="none" />
+  </g>
+</svg>
