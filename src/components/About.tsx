@@ -41,7 +41,7 @@ const About = () => {
               <div className="relative z-10 w-72 h-84 overflow-hidden rounded-2xl bg-white/10 dark:bg-gray-800/40 backdrop-blur-sm border border-white/20 dark:border-gray-700/30 shadow-xl">
                 <AspectRatio ratio={3/4} className="w-full h-full">
                   <img
-                    src="/lovable-uploads/e4a46fa5-8d53-4e99-8813-a37ecb74c1d3.png"
+                    src="/images/profile.png"
                     alt="Vishal Golhar"
                     className="w-full h-full object-cover"
                   />

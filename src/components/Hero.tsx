@@ -132,7 +132,7 @@ const Hero = () => {
               <div className="w-64 h-64 md:w-80 md:h-80 rounded-full bg-gradient-to-br from-brand-blue/20 to-brand-coral/20 absolute top-4 left-4 animate-pulse"></div>
               <div className="w-64 h-64 md:w-80 md:h-80 relative rounded-full overflow-hidden border-4 border-white dark:border-gray-800 shadow-lg z-10 glass-effect">
                 <img
-                  src="/lovable-uploads/e4a46fa5-8d53-4e99-8813-a37ecb74c1d3.png"
+                  src="/images/profile.png"
                   alt="Vishal Golhar"
                   className="w-full h-full object-cover"
                 />
