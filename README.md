@@ -3,6 +3,12 @@
 A modern, responsive personal portfolio website to showcase skills, projects, internships, and certificates.
 
 ## Version 1.2
+This update includes:
+- Modern responsive portfolio design
+- Multiple sections for skills, projects, and certificates
+- Interactive UI components with shadcn-ui
+- Tailwind CSS styling with custom animations
+- TypeScript and React implementation with Vite
 
 ## About
 
