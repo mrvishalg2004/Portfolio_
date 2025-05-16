@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import ThemeToggle from "./theme/ThemeToggle";
 
+
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -18,6 +19,57 @@ const Header = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+  
+  // Custom smooth scroll function with easing
+  const smoothScroll = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
+    e.preventDefault();
+    
+    // Close mobile menu if it's open
+    if (mobileMenuOpen) {
+      setMobileMenuOpen(false);
+    }
+    
+    const targetElement = document.getElementById(targetId);
+    
+    if (targetElement) {
+      // Get the target's position
+      const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY;
+      // Adjust for header height (approx 70px)
+      const offsetPosition = targetPosition - 70;
+      // Current position
+      const startPosition = window.scrollY;
+      // Distance to scroll
+      const distance = offsetPosition - startPosition;
+      // Duration in ms
+      const duration = 800;
+      // Start time
+      let startTime: number | null = null;
+      
+      const animation = (currentTime: number) => {
+        if (startTime === null) startTime = currentTime;
+        const timeElapsed = currentTime - startTime;
+        const progress = Math.min(timeElapsed / duration, 1);
+        
+        // Easing function for smoother motion (easeInOutCubic)
+        const ease = (t: number) => {
+          return t < 0.5 
+            ? 4 * t * t * t 
+            : 1 - Math.pow(-2 * t + 2, 3) / 2;
+        };
+        
+        window.scrollTo({
+          top: startPosition + distance * ease(progress),
+          behavior: 'auto' // We manually control the animation so we use 'auto'
+        });
+        
+        if (timeElapsed < duration) {
+          requestAnimationFrame(animation);
+        }
+      };
+      
+      requestAnimationFrame(animation);
+    }
+  };
 
   const navLinks = [
     { name: "Home", href: "#home" },
@@ -39,7 +91,7 @@ const Header = () => {
       }`}
     >
       <div className="container-custom flex items-center justify-between space-x-2 md:space-x-4">
-        <a href="#home" className="flex items-center group flex-shrink-0 transition-all duration-300 hover:opacity-80">
+        <a href="#home" onClick={(e) => smoothScroll(e, 'home')} className="flex items-center group flex-shrink-0 transition-all duration-300 hover:opacity-80">
           <div>
             <h1 className="text-lg md:text-xl lg:text-2xl font-bold">
               <span className="text-gray-900 dark:text-white font-extrabold tracking-wide">VISHAL</span>
@@ -54,6 +106,7 @@ const Header = () => {
             <a
               key={link.name}
               href={link.href}
+              onClick={(e) => smoothScroll(e, link.href.substring(1))}
               className="font-medium text-sm lg:text-base transition-all duration-300 relative group"
             >
               <span className="relative z-10 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-purple-500 group-hover:via-brand-blue group-hover:to-blue-400 group-hover:bg-clip-text">
@@ -121,7 +174,7 @@ const Header = () => {
               key={link.name}
               href={link.href}
               className="font-medium py-2 transition-all duration-300 relative group"
-              onClick={() => setMobileMenuOpen(false)}
+              onClick={(e) => smoothScroll(e, link.href.substring(1))}
             >
               <span className="relative z-10 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-purple-500 group-hover:via-brand-blue group-hover:to-blue-400 group-hover:bg-clip-text">
                 {link.name}
