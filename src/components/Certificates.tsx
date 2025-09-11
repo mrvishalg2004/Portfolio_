@@ -100,6 +100,14 @@ export const CertificateItem = ({
                         <>
                           <span className="text-orange-500 dark:text-orange-400">AWS</span> Cloud Practitioner
                         </>
+                      ) : title.includes("Gen AI Academy") ? (
+                        <>
+                          <span className="text-indigo-600 dark:text-indigo-400">Gen AI</span> Academy
+                        </>
+                      ) : title.includes("PHP and MySQL") ? (
+                        <>
+                          <span className="text-purple-600 dark:text-purple-400">PHP & MySQL</span> Training
+                        </>
                       ) : (
                         title
                       )}
@@ -221,6 +229,14 @@ export const CertificateItem = ({
                 ) : title.includes("Cloud Practitioner") ? (
                   <>
                     <span className="text-orange-500 dark:text-orange-400">AWS</span> Cloud Practitioner
+                  </>
+                ) : title.includes("Gen AI Academy") ? (
+                  <>
+                    <span className="text-indigo-600 dark:text-indigo-400">Gen AI</span> Academy
+                  </>
+                ) : title.includes("PHP and MySQL") ? (
+                  <>
+                    <span className="text-purple-600 dark:text-purple-400">PHP & MySQL</span> Training
                   </>
                 ) : (
                   title
@@ -354,16 +370,36 @@ export const CertificateItem = ({
   );
 };
 
-// Export certificate data for use in AllCertificates page
+// Export certificate data for use in AllCertificates page - arranged in chronological order (most recent first)
 export const certificateItems = [
   {
+    title: "Gen AI Academy",
+    issuer: "Google Cloud Skills Boost",
+    issueDate: "Aug 2025",
+    credentialId: "2025H2S04GENAI-AI200246",
+    description: "Successfully completed the Gen AI Academy program by Google Cloud Skills Boost, focusing on advanced generative artificial intelligence concepts, applications, and practical implementations. This comprehensive program covered cutting-edge AI technologies and their real-world applications.",
+    skills: ["Generative AI", "Machine Learning", "Google Cloud Platform", "AI Model Development"],
+    logo: "/images/Certificate Logo/Google Cloud Skills Boost.jpeg",
+    image: "https://certificate.hack2skill.com/user/genai12/2025H2S04GENAI-A1200246",
+  },
+  {
+    title: "PHP and MySQL Training",
+    issuer: "Indian Institute of Technology, Bombay",
+    issueDate: "Jun 2025",
+    credentialId: "3960741LJV",
+    description: "PHP and MySQL Training is a certification program offered by the Spoken Tutorial Project, IIT Bombay. This comprehensive training covered server-side programming with PHP and database management with MySQL, focusing on web development best practices, database design, and dynamic web application development.",
+    skills: ["PHP", "MySQL", "Web Development", "Database Management"],
+    logo: "/images/Certificate Logo/IIT Bombay.svg.png",
+    image: "https://media.licdn.com/dms/image/v2/D4D2DAQFTzH5vMGGP9w/profile-treasury-image-shrink_800_800/B4DZeiQS1tHkBg-/0/1750773871017?e=1758178800&v=beta&t=T7L5AH3_THxLi6wU-RFlJlBMt8BE05PzW7Nds_0fq6A",
+  },
+  {
     title: "Electronic Art - Software Engineering Job Simulation",
     issuer: "Electronic Arts (EA)",
     issueDate: "Feb 2025",
     expiryDate: "Nov 2026",
     credentialId: "a2SY4C8MaN48uZr9P",
     description: "I just completed Electronic Arts's Software Engineering on Forage. In the simulation I: Proposed a new feature for the EA Sports College Football and wrote a Feature Proposal describing it to other stakeholders. Built a class diagram and created a header file in C++ with class definitions for each object. Patched a bugfix and optimized the EA Sports College Football codebase by implementing an improved data structure.",
-    logo: "https://media.licdn.com/dms/image/v2/D4E0BAQGQxdnYoe0DZQ/company-logo_100_100/B4EZVJmsPmGgAU-/0/1740696634652/electronic_arts_logo?e=1752710400&v=beta&t=1ZRL03dLKoY8V4xt3ca3MQHuWLv8ZMkhrWrvHjR_1DY",
+    logo: "/images/Certificate Logo/Electronic Arts (EA).jpeg",
     image: "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/j43dGscQHtJJ57N54/a77WE3de8qrxWferQ_j43dGscQHtJJ57N54_YhbYQvopSSvkcEEJa_1740768080082_completion_certificate.pdf",
   },
   {
@@ -373,7 +409,7 @@ export const certificateItems = [
     credentialId: "3960741BUL",
     description: "RDBMS PostgreSQL Training is a certification program offered by the Spoken Tutorial Project, IIT Bombay. It focuses on building foundational skills in PostgreSQL, a powerful open-source relational database management system. This training covers database design, SQL querying, and efficient data management techniques, equipping learners with practical knowledge for real-world applications.",
     skills: ["PostgreSQL", "RDBMS"],
-    logo: "https://media.licdn.com/dms/image/v2/C4D0BAQGmDoDCx_FYpA/company-logo_200_200/company-logo_200_200/0/1660636307357/indian_institute_of_technology_bombay_logo?e=1752710400&v=beta&t=nlT4vUiDsKzq3C7xdujR-EUin_HJkI1MJuwpnGrydgw",
+    logo: "/images/Certificate Logo/IIT Bombay.svg.png",
     image: "https://media.licdn.com/dms/image/v2/D4D2DAQGRTYKAcLUgMA/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1736224131225?e=1747854000&v=beta&t=fTXpRuoPKeS-ORGom581XSjL3sygwNDGQ_NNK8I9WZg",
   },
   {
@@ -382,17 +418,8 @@ export const certificateItems = [
     issueDate: "Nov 2024",
     credentialId: "Hu7hYAGC6sbkZm2ms",
     description: "AWS - Designed and simple and scalable hosting architecture based on Elastic Beanstalk for a client experiencing significant growth and slow response times. - Described my proposed architecture in plain language ensuring my client understood how it works and how costs will be calculated for it.",
-    logo: "https://media.licdn.com/dms/image/v2/D560BAQEhb_j1_sDRJQ/company-logo_100_100/company-logo_100_100/0/1720817595519/theforage_logo?e=1752710400&v=beta&t=_hbAeGbOZEQLyqvxKXSzXUkx3hSZvrA6NPO7Nmva24Q",
+    logo: "/images/Certificate Logo/Forage.png",
     image: "https://media.licdn.com/dms/image/v2/D4D2DAQEn9evuYoNS0Q/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1732697758705?e=1747854000&v=beta&t=wZ_2Z71witnR-nriGOoxpCMEt5XDkVIKjGlhySgKhK4",
-  },
-  {
-    title: "Accenture UK - Developer and Technology Job Simulation",
-    issuer: "Forage",
-    issueDate: "Nov 2024",
-    credentialId: "PZ3vC7zyWJk4oES64",
-    description: "Accenture UK - Developer and Technology Job Simulation",
-    logo: "https://media.licdn.com/dms/image/v2/D560BAQEhb_j1_sDRJQ/company-logo_100_100/company-logo_100_100/0/1720817595519/theforage_logo?e=1752710400&v=beta&t=_hbAeGbOZEQLyqvxKXSzXUkx3hSZvrA6NPO7Nmva24Q",
-    image: "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/ovyvuqqNRQKBjNxbj/3xnZEj9kfpoQKW885_ovyvuqqNRQKBjNxbj_YhbYQvopSSvkcEEJa_1732524794354_completion_certificate.pdf",
   },
   {
     title: "Overview of Geographical Information System",
@@ -401,8 +428,17 @@ export const certificateItems = [
     credentialId: "2024234293485",
     description: "This certificate acknowledges the successful completion of the \"Overview of Geographical Information System\" online course conducted by the Indian Institute of Remote Sensing (IIRS), ISRO. This program covered essential GIS topics such as spatial data models, map projections, spatial analysis, network analysis, and open-source tools, providing practical knowledge of geospatial technologies and their applications.",
     skills: ["Open-Source Software", "Spatial Analysis", "Geoinformatics", "Big Data Analytics"],
-    logo: "https://media.licdn.com/dms/image/v2/C4D0BAQFAvy0KqPRfig/company-logo_100_100/company-logo_100_100/0/1631312209996?e=1752710400&v=beta&t=xKWGrGm2O11K059pHpq3rgJ0U-IAhNOAyb6Uc6n8IoI",
+    logo: "/images/Certificate Logo/ISRO IIRS.ico",
     image: "https://media.licdn.com/dms/image/v2/D4D2DAQED39whD3NbcQ/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1732172875758?e=1747854000&v=beta&t=qK_arPhMJ5OQ8WqjNaLU3w1TblufI6qtmHOiHhyAY-w",
+  },
+  {
+    title: "Accenture UK - Developer and Technology Job Simulation",
+    issuer: "Forage",
+    issueDate: "Nov 2024",
+    credentialId: "PZ3vC7zyWJk4oES64",
+    description: "Accenture UK - Developer and Technology Job Simulation",
+    logo: "/images/Certificate Logo/Forage.png",
+    image: "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/ovyvuqqNRQKBjNxbj/3xnZEj9kfpoQKW885_ovyvuqqNRQKBjNxbj_YhbYQvopSSvkcEEJa_1732524794354_completion_certificate.pdf",
   },
   {
     title: "Remote Sensing and Digital Image Analysis",
@@ -411,7 +447,7 @@ export const certificateItems = [
     credentialId: "2024234293485",
     description: "This certification from Indian Institute of Remote Sensing (IIRS), ISRO, highlights my expertise in Remote Sensing and Digital Image Analysis. The course covered satellite data interpretation, image classification, and geospatial applications. It has enhanced my ability to apply advanced remote sensing techniques in areas like environmental monitoring, urban planning, and resource management.",
     skills: ["Space Science", "Digital Image Processing", "Remote Sensing", "Geospatial Data"],
-    logo: "https://media.licdn.com/dms/image/v2/C4D0BAQFAvy0KqPRfig/company-logo_100_100/company-logo_100_100/0/1631312209996?e=1752710400&v=beta&t=xKWGrGm2O11K059pHpq3rgJ0U-IAhNOAyb6Uc6n8IoI",
+    logo: "/images/Certificate Logo/ISRO IIRS.ico",
     image: "https://media.licdn.com/dms/image/v2/D4D2DAQEd171DnUnQ0Q/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1728151781982?e=1747854000&v=beta&t=k5IjI-DK1EZHfufuC3BNQ9dX0pcmGWm0xgrb_P1N-zc",
   },
   {
@@ -421,7 +457,7 @@ export const certificateItems = [
     expiryDate: "Jan 2034",
     description: "Successfully completed the AWS Certified SysOps Administrator - Associate (SOA-C02) Exam Prep Standard Course. This certification validates my expertise in deploying, managing, and operating scalable, highly available, and fault-tolerant systems on AWS. It covers essential areas such as system operations, security, monitoring, automation, and disaster recovery on the AWS platform.",
     skills: ["AWS Management and Operations", "Networking and Content Delivery", "Troubleshooting and Technical Support"],
-    logo: "https://media.licdn.com/dms/image/v2/D4E0BAQE0fp2sCqnVLg/company-logo_100_100/company-logo_100_100/0/1738855736997/amazon_web_services_logo?e=1752710400&v=beta&t=taVDVD9Dy2N3N2omh5hYbZd4T1VAxJs2WnlH4-X59fU",
+    logo: "/images/Certificate Logo/Amazon Web Services.png",
     image: "https://media.licdn.com/dms/image/v2/D562DAQGjucCVEGVNdQ/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1720501858487?e=1747854000&v=beta&t=VdKG8Qw6czU1k6-nA1dw4dLUZXN58tBe9tiPry_SLXY",
   },
   {
@@ -431,95 +467,13 @@ export const certificateItems = [
     expiryDate: "Jul 2034",
     description: "This certification has provided me with a comprehensive understanding of AWS Cloud concepts, including core services, security, architecture, pricing, and support. With this knowledge, I am well-equipped to leverage AWS Cloud solutions effectively and contribute to cloud-based projects and strategies.",
     skills: ["Basic Cloud Computing Concepts", "AWS Pricing and Support Models", "AWS Security and Compliance", "Cloud Architecture Best Practices", "Core AWS Services"],
-    logo: "https://media.licdn.com/dms/image/v2/D4E0BAQE0fp2sCqnVLg/company-logo_100_100/company-logo_100_100/0/1738855736997/amazon_web_services_logo?e=1752710400&v=beta&t=taVDVD9Dy2N3N2omh5hYbZd4T1VAxJs2WnlH4-X59fU",
-    image: "https://media.licdn.com/dms/image/v2/D4D2DAQH2gHqD12soZw/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1719899270309?e=1747854000&v=beta&t=EYAOeBMqLlcMpjzIh2AVZw7pFpbs_UTJ9-2VHwNyFa8",
-  }
-];
-
-// Additional certifications data
-const additionalCertificates = [
-  {
-    title: "Electronic Art - Software Engineering Job Simulation",
-    issuer: "Electronic Arts (EA)",
-    issueDate: "Feb 2025",
-    expiryDate: "Nov 2026",
-    credentialId: "a2SY4C8MaN48uZr9P",
-    description: "I just completed Electronic Arts's Software Engineering on Forage. In the simulation I: Proposed a new feature for the EA Sports College Football and wrote a Feature Proposal describing it to other stakeholders. Built a class diagram and created a header file in C++ with class definitions for each object. Patched a bugfix and optimized the EA Sports College Football codebase by implementing an improved data structure.",
-    logo: "https://media.licdn.com/dms/image/v2/D4E0BAQGQxdnYoe0DZQ/company-logo_100_100/B4EZVJmsPmGgAU-/0/1740696634652/electronic_arts_logo?e=1752710400&v=beta&t=1ZRL03dLKoY8V4xt3ca3MQHuWLv8ZMkhrWrvHjR_1DY",
-    image: "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/j43dGscQHtJJ57N54/a77WE3de8qrxWferQ_j43dGscQHtJJ57N54_YhbYQvopSSvkcEEJa_1740768080082_completion_certificate.pdf",
-  },
-  {
-    title: "RDBMS PostgreSQL Training",
-    issuer: "Indian Institute of Technology, Bombay",
-    issueDate: "Jan 2025",
-    credentialId: "3960741BUL",
-    description: "RDBMS PostgreSQL Training is a certification program offered by the Spoken Tutorial Project, IIT Bombay. It focuses on building foundational skills in PostgreSQL, a powerful open-source relational database management system. This training covers database design, SQL querying, and efficient data management techniques, equipping learners with practical knowledge for real-world applications.",
-    skills: ["PostgreSQL", "RDBMS"],
-    logo: "https://media.licdn.com/dms/image/v2/C4D0BAQGmDoDCx_FYpA/company-logo_200_200/company-logo_200_200/0/1660636307357/indian_institute_of_technology_bombay_logo?e=1752710400&v=beta&t=nlT4vUiDsKzq3C7xdujR-EUin_HJkI1MJuwpnGrydgw",
-    image: "https://media.licdn.com/dms/image/v2/D4D2DAQGRTYKAcLUgMA/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1736224131225?e=1747854000&v=beta&t=fTXpRuoPKeS-ORGom581XSjL3sygwNDGQ_NNK8I9WZg",
-  },
-  {
-    title: "AWS APAC - Solutions Architecture Job Simulation",
-    issuer: "Forage",
-    issueDate: "Nov 2024",
-    credentialId: "Hu7hYAGC6sbkZm2ms",
-    description: "AWS - Designed and simple and scalable hosting architecture based on Elastic Beanstalk for a client experiencing significant growth and slow response times. - Described my proposed architecture in plain language ensuring my client understood how it works and how costs will be calculated for it.",
-    logo: "https://media.licdn.com/dms/image/v2/D560BAQEhb_j1_sDRJQ/company-logo_100_100/company-logo_100_100/0/1720817595519/theforage_logo?e=1752710400&v=beta&t=_hbAeGbOZEQLyqvxKXSzXUkx3hSZvrA6NPO7Nmva24Q",
-    image: "https://media.licdn.com/dms/image/v2/D4D2DAQEn9evuYoNS0Q/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1732697758705?e=1747854000&v=beta&t=wZ_2Z71witnR-nriGOoxpCMEt5XDkVIKjGlhySgKhK4",
-  },
-  {
-    title: "Accenture UK - Developer and Technology Job Simulation",
-    issuer: "Forage",
-    issueDate: "Nov 2024",
-    credentialId: "PZ3vC7zyWJk4oES64",
-    description: "Accenture UK - Developer and Technology Job Simulation",
-    logo: "https://media.licdn.com/dms/image/v2/D560BAQEhb_j1_sDRJQ/company-logo_100_100/company-logo_100_100/0/1720817595519/theforage_logo?e=1752710400&v=beta&t=_hbAeGbOZEQLyqvxKXSzXUkx3hSZvrA6NPO7Nmva24Q",
-    image: "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/ovyvuqqNRQKBjNxbj/3xnZEj9kfpoQKW885_ovyvuqqNRQKBjNxbj_YhbYQvopSSvkcEEJa_1732524794354_completion_certificate.pdf",
-  },
-  {
-    title: "Overview of Geographical Information System",
-    issuer: "Indian Institute of Remote Sensing (IIRS), Indian Space Research Organization (ISRO)",
-    issueDate: "Nov 2024",
-    credentialId: "2024234293485",
-    description: "This certificate acknowledges the successful completion of the \"Overview of Geographical Information System\" online course conducted by the Indian Institute of Remote Sensing (IIRS), ISRO. This program covered essential GIS topics such as spatial data models, map projections, spatial analysis, network analysis, and open-source tools, providing practical knowledge of geospatial technologies and their applications.",
-    skills: ["Open-Source Software", "Spatial Analysis", "Geoinformatics", "Big Data Analytics"],
-    logo: "https://media.licdn.com/dms/image/v2/C4D0BAQFAvy0KqPRfig/company-logo_100_100/company-logo_100_100/0/1631312209996?e=1752710400&v=beta&t=xKWGrGm2O11K059pHpq3rgJ0U-IAhNOAyb6Uc6n8IoI",
-    image: "https://media.licdn.com/dms/image/v2/D4D2DAQED39whD3NbcQ/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1732172875758?e=1747854000&v=beta&t=qK_arPhMJ5OQ8WqjNaLU3w1TblufI6qtmHOiHhyAY-w",
-  },
-  {
-    title: "Remote Sensing and Digital Image Analysis",
-    issuer: "Indian Institute of Remote Sensing (IIRS), Indian Space Research Organization (ISRO)",
-    issueDate: "Sep 2024",
-    credentialId: "2024234293485",
-    description: "This certification from Indian Institute of Remote Sensing (IIRS), ISRO, highlights my expertise in Remote Sensing and Digital Image Analysis. The course covered satellite data interpretation, image classification, and geospatial applications. It has enhanced my ability to apply advanced remote sensing techniques in areas like environmental monitoring, urban planning, and resource management.",
-    skills: ["Space Science", "Digital Image Processing", "Remote Sensing", "Geospatial Data"],
-    logo: "https://media.licdn.com/dms/image/v2/C4D0BAQFAvy0KqPRfig/company-logo_100_100/company-logo_100_100/0/1631312209996?e=1752710400&v=beta&t=xKWGrGm2O11K059pHpq3rgJ0U-IAhNOAyb6Uc6n8IoI",
-    image: "https://media.licdn.com/dms/image/v2/D4D2DAQEd171DnUnQ0Q/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1728151781982?e=1747854000&v=beta&t=k5IjI-DK1EZHfufuC3BNQ9dX0pcmGWm0xgrb_P1N-zc",
-  },
-  {
-    title: "AWS Certified SysOps Administrator - Associate (SOA-C02)",
-    issuer: "Amazon Web Services (AWS)",
-    issueDate: "Jul 2024",
-    expiryDate: "Jan 2034",
-    description: "Successfully completed the AWS Certified SysOps Administrator - Associate (SOA-C02) Exam Prep Standard Course. This certification validates my expertise in deploying, managing, and operating scalable, highly available, and fault-tolerant systems on AWS. It covers essential areas such as system operations, security, monitoring, automation, and disaster recovery on the AWS platform.",
-    skills: ["AWS Management and Operations", "Networking and Content Delivery", "Troubleshooting and Technical Support"],
-    logo: "https://media.licdn.com/dms/image/v2/D4E0BAQE0fp2sCqnVLg/company-logo_100_100/company-logo_100_100/0/1738855736997/amazon_web_services_logo?e=1752710400&v=beta&t=taVDVD9Dy2N3N2omh5hYbZd4T1VAxJs2WnlH4-X59fU",
-    image: "https://media.licdn.com/dms/image/v2/D562DAQGjucCVEGVNdQ/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1720501858487?e=1747854000&v=beta&t=VdKG8Qw6czU1k6-nA1dw4dLUZXN58tBe9tiPry_SLXY",
-  },
-  {
-    title: "AWS Cloud Practitioner Essentials",
-    issuer: "Amazon Web Services (AWS)",
-    issueDate: "Jul 2024",
-    expiryDate: "Jul 2034",
-    description: "This certification has provided me with a comprehensive understanding of AWS Cloud concepts, including core services, security, architecture, pricing, and support. With this knowledge, I am well-equipped to leverage AWS Cloud solutions effectively and contribute to cloud-based projects and strategies.",
-    skills: ["Basic Cloud Computing Concepts", "AWS Pricing and Support Models", "AWS Security and Compliance", "Cloud Architecture Best Practices", "Core AWS Services"],
-    logo: "https://media.licdn.com/dms/image/v2/D4E0BAQE0fp2sCqnVLg/company-logo_100_100/company-logo_100_100/0/1738855736997/amazon_web_services_logo?e=1752710400&v=beta&t=taVDVD9Dy2N3N2omh5hYbZd4T1VAxJs2WnlH4-X59fU",
+    logo: "/images/Certificate Logo/Amazon Web Services.png",
     image: "https://media.licdn.com/dms/image/v2/D4D2DAQH2gHqD12soZw/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1719899270309?e=1747854000&v=beta&t=EYAOeBMqLlcMpjzIh2AVZw7pFpbs_UTJ9-2VHwNyFa8",
   }
 ];
 
 // Combine all certificates for use in the AllCertificates page
-export const allCertificates = [...certificateItems, ...additionalCertificates];
+export const allCertificates = certificateItems;
 
 // Main Certificates component
 const Certificates = () => {
