@@ -219,7 +219,7 @@ const Internship = () => {
         "Awarded certifications by Shell, AICTE, and Edunet Foundation for the internship accomplishment."
       ],
       skills: ["Artificial Intelligence Applications","Data Pre-processing & Modeling","Technical Presentation Skills"],
-      logo: "https://media.licdn.com/dms/image/v2/D4D0BAQFYMo4H4lYsmA/company-logo_100_100/company-logo_100_100/0/1698144781838?e=1752710400&v=beta&t=H_jsha5eWVq5On6JgPpKeOFS27uhHLbjJC4ST_YkgEA",
+      logo: "/images/Company Logo/AICTE.png",
       category: "education"
     },
     {
@@ -232,13 +232,13 @@ const Internship = () => {
       description: [
         "Completed a 6-week project-based internship focused on Full Stack Web Development using the MERN stack.",
         "Participated in masterclasses covering Branding, UI/UX Design, and Containerization in Web Development.",
-        "Engaged in personalized mentorship and “Ask Me Anything” sessions to receive expert feedback.",
+        "Engaged in personalized mentorship and \"Ask Me Anything\" sessions to receive expert feedback.",
         "Independently developed a web application prototype addressing a real-world challenge, guided by a mentor.",
         "Presented the final project to industry experts from EY GDS during a capstone event.",
         "Earned certifications from EY GDS, AICTE, and Edunet Foundation for successful completion."
       ],
       skills: ["MongoDB","React.js","Node.js","Version Control"],
-      logo: "https://media.licdn.com/dms/image/v2/C510BAQGpRhkpxp5A9A/company-logo_100_100/company-logo_100_100/0/1630570672166/ernstandyoung_logo?e=1752710400&v=beta&t=ARWJzBh26idtnCMLtNfuytaWRN3OYTWNNzTnv0-tAaw",
+      logo: "/images/Company Logo/Ernst & Young .png",
       category: "corporate",
       // certificate: {
       //   title: "Technology Consulting Certificate",
@@ -258,7 +258,7 @@ const Internship = () => {
        "Contributed to a collaborative, team-oriented environment, improving communication and project management abilities."
       ],
       skills: ["Artificial Intelligence (AI)","Python with machine learning ","Cloud","Problem Solving"],
-      logo: "https://media.licdn.com/dms/image/v2/C4E0BAQEA0V9yzn_dPg/company-logo_100_100/company-logo_100_100/0/1646199475973/edunetfoundation_logo?e=1752710400&v=beta&t=aIrh9vYr6jfy5vFR5li5T9BlUPPIwYTHLAIvyrENClQ",
+      logo: "/images/Company Logo/Edunet Foundation.jpg",
       category: "education"
     },
     {
@@ -276,7 +276,7 @@ const Internship = () => {
         
       ],
       skills: ["Machine Learning", "Natural Language Processing (NLP)", "Python for AI", "Deep Learning", "Python with machine learning", "Data Analysis"],
-      logo: "https://media.licdn.com/dms/image/v2/D4D0BAQF2ToADEarOqA/company-logo_100_100/company-logo_100_100/0/1733054966467/vois_logo?e=1752710400&v=beta&t=BjZErcWxF_YaGEzm-6hpjKUORNthC2nw61hsWGNo6cw",
+      logo: "/images/Company Logo/_VOIS.jpeg",
       category: "corporate"
     },
     {
@@ -294,7 +294,7 @@ const Internship = () => {
         "Gained exposure to industry-leading practices in machine learning, expanding my technical expertise and readiness for future roles in AI and software development."
       ],
       skills: ["Java", "Python with machine learning", "Python (Programming Language)", "IDLE", "MySQL"],
-      logo: "https://media.licdn.com/dms/image/v2/C560BAQGG8EPwRomhMw/company-logo_100_100/company-logo_100_100/0/1672741491911/ibaseelctrosoft_logo?e=1752710400&v=beta&t=oLG5saqLCq2Rt4NwX-Ld7cjfTaWwppTljlev5JVwsQo",
+      logo: "/images/Company Logo/iBase Electrosoft LLP.jpeg",
       category: "startup"
     }
   ];
