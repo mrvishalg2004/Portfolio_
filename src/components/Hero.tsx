@@ -76,7 +76,7 @@ const Hero = () => {
             style={{ y: y1, opacity }}
           >
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 bg-gradient-to-r from-brand-blue to-brand-coral bg-clip-text text-transparent">
-              Hi, I'm <span>Vishal Golhar</span> 👋
+              Hi, I'm <span>Vishal Golhar</span> 
             </h1>
             <div className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8">
               <TypewriterEffect
@@ -135,6 +135,8 @@ const Hero = () => {
                   src="/images/passport pic.jpg"
                   alt="Vishal Golhar"
                   className="w-full h-full object-cover"
+                  loading="eager"
+                  decoding="async"
                 />
               </div>
             </div>

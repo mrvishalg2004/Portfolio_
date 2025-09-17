@@ -1,6 +1,5 @@
 import React from 'react';
 import { useTheme } from './ThemeProvider';
-import { motion } from 'framer-motion';
 
 export const ThemeToggle: React.FC = () => {
   const { theme, setTheme } = useTheme();
@@ -48,15 +47,13 @@ export const ThemeToggle: React.FC = () => {
         {/* No text labels as per user request */}
         
         {/* Toggle Knob - Slightly larger to match reference */}
-        <motion.div 
+        <div 
           className={`
-            absolute w-6 h-6 rounded-full shadow-md z-10 flex items-center justify-center
+            absolute w-6 h-6 rounded-full shadow-md z-10 flex items-center justify-center transition-all duration-200
             ${theme === 'light' 
               ? 'bg-white left-0.5' 
               : 'bg-slate-900 right-0.5'}
           `}
-          layout
-          transition={{ type: "spring", stiffness: 700, damping: 30 }}
           style={{ boxShadow: '0 1px 4px rgba(0,0,0,0.2)' }}
         >
           {/* Sun Icon (Light Mode) */}
@@ -80,7 +77,7 @@ export const ThemeToggle: React.FC = () => {
               <div className="absolute top-1 right-1.5 w-0.5 h-0.5 bg-white rounded-full opacity-90"></div>
             </div>
           )}
-        </motion.div>
+        </div>
       </div>
     </div>
   );
