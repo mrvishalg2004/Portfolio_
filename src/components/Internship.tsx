@@ -204,6 +204,25 @@ const Internship = () => {
 
   const internships: InternshipProps[] = [
     {
+      title: "Machine Learning Intern",
+      company: "Road2Tech Pvt. Ltd.",
+      duration: "6 mo",
+      period: "Nov 2025 - Present",
+      location: "Pune, Maharashtra, India",
+      isRemote: true,
+      description: [
+        "Playing a pivotal role in comprehensive ML development processes, engaging in end-to-end machine learning workflows.",
+        "Handling data preprocessing tasks to ensure clean datasets and maintain efficient data pipelines for model training.",
+        "Training and optimizing machine learning models while ensuring production readiness and deployment standards.",
+        "Maintaining clean datasets and efficient workflows through systematic data management practices.",
+        "Preparing comprehensive technical documentation for ML models and processes.",
+        "Adhering to data security standards and best practices throughout the ML development lifecycle."
+      ],
+      skills: ["Python (Programming Language)", "Artificial Intelligence (AI)", "Machine Learning", "Data Preprocessing"],
+      logo: "/images/Company Logo/road2tech.png",
+      category: "corporate"
+    },
+    {
       title: "Green Skills Using AI Intern",
       company: "All India Council for Technical Education (AICTE)",
       duration: "1 mos",

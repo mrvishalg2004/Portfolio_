@@ -108,12 +108,27 @@ const ProjectCard = ({
 const Projects = () => {
   const projects = [
     {
+      title: "FarmCareAI",
+      description: "AI-powered agricultural platform that helps farmers diagnose crop diseases, predict yields, and optimize farming practices using machine learning and computer vision.",
+      techStack: ["React", "AI", "Machine Learning", "Computer Vision"],
+      image: "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?q=80&w=1470&auto=format&fit=crop",
+      githubLink: "https://github.com/mrvishalg2004/FarmCareAi",
+      demoLink: "https://farmcareai.vercel.app/",
+    },
+    {
       title: "InterviewPro",
       description: "AI platform for simulating interviews with real-time feedback on communication skills and technical knowledge.",
       techStack: ["Python", "React", "AI", "NLP"],
       image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?q=80&w=1470&auto=format&fit=crop",
       githubLink: "https://github.com/mrvishalg2004/Interviewpro",
       demoLink: "https://liveinterviewpro.vercel.app/",
+    },
+    {
+      title: "Disease Prediction Using Machine Learning",
+      description: "Innovative ML solution that predicts diseases based on patient symptoms, suggests specialized doctors, and facilitates online consultations. Features telemedicine capabilities for enhanced healthcare accessibility and early disease detection.",
+      techStack: ["Python", "Machine Learning", "HTML", "CSS", "MongoDB"],
+      image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=1470&auto=format&fit=crop",
+      githubLink: "https://github.com/mrvishalg2004/Disease-Prediction-using-Django-and-Machine-Learning",
     },
     {
       title: "Disease Prediction ML App",
