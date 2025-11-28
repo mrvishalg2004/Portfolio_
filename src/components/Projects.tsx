@@ -108,8 +108,16 @@ const ProjectCard = ({
 const Projects = () => {
   const projects = [
     {
+      title: "CampusConnect: AI-Enabled Smart Education System",
+      description: "Enterprise-grade education ERP with 20+ modules for learning, administration, and analytics. Features AI-powered assistance, automated workflows, and role-based access with real-time insights.",
+      techStack: ["Next.js 14", "MongoDB Atlas", "Google Gemini AI", "JWT", "Tailwind CSS", "shadcn/ui"],
+      image: "https://images.unsplash.com/photo-1523580494863-6f3031224c94?q=80&w=1470&auto=format&fit=crop",
+      githubLink: "https://github.com/mrvishalg2004/campus_connect",
+      demoLink: "https://thecampus.vercel.app/",
+    },
+    {
       title: "FarmCareAI",
-      description: "AI-powered agricultural platform that helps farmers diagnose crop diseases, predict yields, and optimize farming practices using machine learning and computer vision.",
+      description: "AI-powered agricultural platform for crop disease diagnosis, yield prediction, and farming optimization using machine learning and computer vision.",
       techStack: ["React", "AI", "Machine Learning", "Computer Vision"],
       image: "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?q=80&w=1470&auto=format&fit=crop",
       githubLink: "https://github.com/mrvishalg2004/FarmCareAi",
@@ -117,7 +125,7 @@ const Projects = () => {
     },
     {
       title: "InterviewPro",
-      description: "AI platform for simulating interviews with real-time feedback on communication skills and technical knowledge.",
+      description: "AI-powered interview simulation platform providing real-time feedback on communication skills and technical knowledge.",
       techStack: ["Python", "React", "AI", "NLP"],
       image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?q=80&w=1470&auto=format&fit=crop",
       githubLink: "https://github.com/mrvishalg2004/Interviewpro",
@@ -125,7 +133,7 @@ const Projects = () => {
     },
     {
       title: "Disease Prediction ML App",
-      description: "Machine learning model that analyzes symptoms to predict potential diseases with high accuracy rate.",
+      description: "ML-powered healthcare platform that predicts diseases from symptoms, suggests specialized doctors, and enables online consultations.",
       techStack: ["Python", "Scikit-learn", "Django", "Machine Learning"],
       image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=1470&auto=format&fit=crop",
       githubLink: "https://github.com/mrvishalg2004/Disease-Prediction-using-Django-and-Machine-Learning",
