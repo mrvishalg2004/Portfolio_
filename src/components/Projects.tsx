@@ -124,13 +124,6 @@ const Projects = () => {
       demoLink: "https://liveinterviewpro.vercel.app/",
     },
     {
-      title: "Disease Prediction Using Machine Learning",
-      description: "Innovative ML solution that predicts diseases based on patient symptoms, suggests specialized doctors, and facilitates online consultations. Features telemedicine capabilities for enhanced healthcare accessibility and early disease detection.",
-      techStack: ["Python", "Machine Learning", "HTML", "CSS", "MongoDB"],
-      image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=1470&auto=format&fit=crop",
-      githubLink: "https://github.com/mrvishalg2004/Disease-Prediction-using-Django-and-Machine-Learning",
-    },
-    {
       title: "Disease Prediction ML App",
       description: "Machine learning model that analyzes symptoms to predict potential diseases with high accuracy rate.",
       techStack: ["Python", "Scikit-learn", "Django", "Machine Learning"],
