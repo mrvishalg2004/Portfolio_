@@ -12,6 +12,7 @@ interface ProjectCardProps {
   image: string;
   githubLink?: string;
   demoLink?: string;
+  demoComingSoon?: boolean;
 }
 
 const ProjectCard = ({
@@ -21,6 +22,7 @@ const ProjectCard = ({
   image,
   githubLink,
   demoLink,
+  demoComingSoon,
 }: ProjectCardProps) => {
   const [hovered, setHovered] = useState(false);
   
@@ -87,7 +89,13 @@ const ProjectCard = ({
                 Code
               </a>
             )}
-            {demoLink && (
+            {demoComingSoon ? (
+              <span className="flex items-center gap-1.5 bg-gray-200 dark:bg-gray-700 text-gray-500 dark:text-gray-300 px-3 py-1.5 rounded-md text-sm font-medium cursor-not-allowed">
+                <ExternalLink size={14} />
+                Coming Soon
+              </span>
+            ) : (
+            demoLink && (
               <a
                 href={demoLink}
                 target="_blank"
@@ -97,7 +105,7 @@ const ProjectCard = ({
                 <ExternalLink size={14} />
                 Live Demo
               </a>
-            )}
+            ))}
           </div>
         </div>
       </div>
@@ -107,6 +115,14 @@ const ProjectCard = ({
 
 const Projects = () => {
   const projects = [
+    {
+      title: "AssureAI - Insurance Voice AI Agent",
+      description: "Voice AI insurance platform automating outbound calling and chat support with Bolna.ai and Gemini, backed by analytics, role-based controls, and secure MERN infrastructure.",
+      techStack: ["Next.js 14", "TypeScript", "Tailwind CSS", "shadcn/ui", "Node.js", "Express", "MongoDB", "Bolna.ai", "Google Gemini"],
+      image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1470&auto=format&fit=crop",
+      githubLink: "https://github.com/mrvishalg2004/AssureAI-Insurance-Voice-AI-Agent",
+      demoComingSoon: true,
+    },
     {
       title: "CampusConnect: AI-Enabled Smart Education System",
       description: "Enterprise-grade education ERP with 20+ modules for learning, administration, and analytics. Features AI-powered assistance, automated workflows, and role-based access with real-time insights.",
