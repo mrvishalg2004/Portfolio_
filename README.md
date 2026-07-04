@@ -1,4 +1,4 @@
-# Portfolio Showcase
+# brew install gh
 
 A modern, responsive personal portfolio website to showcase skills, projects, internships, and certificates.
 
