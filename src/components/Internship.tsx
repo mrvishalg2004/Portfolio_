@@ -16,6 +16,7 @@ interface InternshipProps {
   description: string[];
   skills: string[];
   logo: string;
+  logoWrapperClassName?: string;
   category?: string;
   certificate?: {
     title: string;
@@ -56,7 +57,7 @@ const InternshipCard: React.FC<InternshipCardProps> = ({ internship }) => {
           {/* Main card content with logo and basic info */}
           <div className="p-6 flex items-center gap-5">
             {/* Logo with hover effect */}
-            <div className="relative flex-shrink-0 w-20 h-20 rounded-xl overflow-hidden bg-white dark:bg-gray-800 shadow-md group-hover:shadow-lg transition-all duration-300 group-hover:scale-105">
+            <div className={cn("relative flex-shrink-0 w-20 h-20 rounded-xl overflow-hidden bg-white dark:bg-gray-800 shadow-md group-hover:shadow-lg transition-all duration-300 group-hover:scale-105", internship.logoWrapperClassName)}>
               <img 
                 src={internship.logo} 
                 alt={internship.company} 
@@ -204,22 +205,21 @@ const Internship = () => {
 
   const internships: InternshipProps[] = [
     {
-      title: "Machine Learning Intern",
-      company: "Road2Tech Pvt. Ltd.",
-      duration: "6 mo",
-      period: "Nov 2025 - Present",
-      location: "Pune, Maharashtra, India",
+      title: "Full Stack Developer Intern",
+      company: "ATC Design And Strategy",
+      duration: "8 mos",
+      period: "Dec 2025 - Present",
+      location: "Hyderabad, Telangana, India",
       isRemote: true,
       description: [
-        "Playing a pivotal role in comprehensive ML development processes, engaging in end-to-end machine learning workflows.",
-        "Handling data preprocessing tasks to ensure clean datasets and maintain efficient data pipelines for model training.",
-        "Training and optimizing machine learning models while ensuring production readiness and deployment standards.",
-        "Maintaining clean datasets and efficient workflows through systematic data management practices.",
-        "Preparing comprehensive technical documentation for ML models and processes.",
-        "Adhering to data security standards and best practices throughout the ML development lifecycle."
+        "Developed and maintained full-stack web applications using React, Node.js, and REST APIs.",
+        "Built responsive UI components and improved user experience across devices.",
+        "Integrated backend services and ensured smooth API communication.",
+        "Worked on real-world client projects, focusing on performance optimization and clean architecture."
       ],
-      skills: ["Python (Programming Language)", "Artificial Intelligence (AI)", "Machine Learning", "Data Preprocessing"],
-      logo: "/images/Company Logo/road2tech.png",
+      skills: ["React.js", "Node.js", "REST APIs"],
+      logo: "/images/atcdesign_logo.jpeg",
+      logoWrapperClassName: "bg-black dark:bg-black",
       category: "corporate"
     },
     {
