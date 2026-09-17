@@ -11,15 +11,13 @@ const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
   const [theme, setTheme] = useState<Theme>(() => {
-    // Check if theme is stored in localStorage
-    const storedTheme = localStorage.getItem('theme');
-    
-    // Default to light mode, but still respect explicit user choice if they've set it before
-    if (!storedTheme) {
-      return 'light';
+    // Check if user has explicitly saved a preference
+    const storedPreference = localStorage.getItem('theme_preference');
+    if (storedPreference === 'light' || storedPreference === 'dark') {
+      return storedPreference;
     }
-    
-    return (storedTheme as Theme) || 'light';
+    // By default, always start in dark mode
+    return 'dark';
   });
 
   // Apply theme whenever it changes
@@ -34,6 +32,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     
     // Save theme to localStorage
     localStorage.setItem('theme', theme);
+    localStorage.setItem('theme_preference', theme);
   }, [theme]);
 
   return (
